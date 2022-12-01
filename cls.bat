@@ -1,0 +1,3 @@
+:start
+cls
+goto start

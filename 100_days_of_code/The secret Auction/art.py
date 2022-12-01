@@ -1,0 +1,3 @@
+logo = '''yala
+yqay
+yay'''

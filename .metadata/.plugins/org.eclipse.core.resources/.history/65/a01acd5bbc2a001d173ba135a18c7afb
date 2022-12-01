@@ -1,0 +1,16 @@
+#Element S in der Liste L nach rechts suchen
+
+########################################################################################################################
+L = [8, 4, 76, 9, 5, 3, 57, 6, 4, 5, 4, 6, 7, 6, 7, 67, 5, 34, 545, 345, 3] #Insert a list you want to search
+S = 3 #Insert what you want to search for
+########################################################################################################################
+
+def linear_search(L, S):
+    pos = 0
+    while pos < len(L):
+        if L[pos] == S:
+            return pos+1
+        pos += 1
+    return "Not found"
+
+print(linear_search(L, S))

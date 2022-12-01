@@ -1,0 +1,32 @@
+########################################################################################################################
+INPUT = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] #Insert a list you want to search
+S = 16 #Insert what you want to search for
+########################################################################################################################
+
+def linear(INPUT, S):
+    pos = 0
+    while pos < len(INPUT):
+        if INPUT[pos] == S:
+            return pos+1
+        pos += 1
+    return "Not found"
+
+def binary(INPUT, S):
+    low = 0
+    high = len(INPUT) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if INPUT[mid] == S:
+            return mid + 1
+        elif INPUT[mid] < S:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return "Not found"
+
+method = input("Which method do you want to use? (linear or binary): ").lower()
+
+if method == "linear" or method == "binary":
+    exec("print("+method+"(INPUT, S))")
+else:
+    print("Invalid method!\nTry again.")

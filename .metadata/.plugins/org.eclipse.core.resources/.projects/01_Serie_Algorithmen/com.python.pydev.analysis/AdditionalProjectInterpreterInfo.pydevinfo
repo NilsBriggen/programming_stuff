@@ -1,0 +1,34 @@
+-- VERSION_5
+-- START DISKCACHE_3
+C:\Users\nilsb\OneDrive - Gymnasium Thun\PC_EXCHANGE\programming_stuff\.metadata\.plugins\org.eclipse.core.resources\.projects\01_Serie_Algorithmen\com.python.pydev.analysis\v2_indexcache
+searching.searching|1661240668211470000|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\searching.py
+searching.single_methods.__init__|1661075207826694600|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\single_methods|^
+searching.single_methods.LinearSearch|1660926547000000000|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\single_methods\LinearSearch.py
+sorting.__init__|1661429773879203200|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\sorting|^
+searching.__init__|1661075207638696700|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching|^
+searching.single_methods.BinarySearch|1661001238000000000|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\single_methods\BinarySearch.py
+sorting.SortByInsertion|1661429709070947000|C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\sorting\SortByInsertion.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+6=searching.searching
+2=searching.single_methods.LinearSearch
+3=C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\single_methods\BinarySearch.py
+4=searching.single_methods.BinarySearch
+7=C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\sorting\SortByInsertion.py
+5=C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\searching.py
+1=C:\Users\nilsb\OneDrive - Gymnasium Thun\Informatik\Serie01_Algorithmen\searching\single_methods\LinearSearch.py
+8=sorting.SortByInsertion
+-- END DICTIONARY
+-- START TREE 1
+6
+S|3|S!1^3#1*19@S!3^3#1*35@S!5^3#1*51@
+bin|2|binary!5^14#5*50@binary_search!3^6#5*34@
+inp|4|INPUT!5^2#1*51@INPUT!7^2#1*67@INPUT!1^2#1*19@INPUT!3^2#1*35@
+ins|1|insertion!7^5#5*66@
+lin|2|linear!5^6#5*50@linear_search!1^6#5*18@
+met|1|method!5^27#1*51@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

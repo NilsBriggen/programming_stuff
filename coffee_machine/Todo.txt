@@ -1,0 +1,21 @@
+Coffee machine
+
+requirements
+-report
+-sufficent products
+-process coins -> quarters, dimes, nickles, pennies
+-turn Off/On
+additional: refill
+
+starting resources: 300ml water, 200ml milk, 100g coffee
+-> def latte, etc. 
+-> global resources
+
+Espresso
+50ml water, 18g coffee
+
+Latte
+200ml water, 24g coffee, 150ml milk
+
+Cappucino
+250 ml water, 24g coffee, 100ml milk
