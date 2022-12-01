@@ -1,4 +1,4 @@
-# programming_stuff
+# My programming stuff
 Everything I've ever done.
 As this is literally a mirror of my local folder so things may be broken or simply unfinished.
 
