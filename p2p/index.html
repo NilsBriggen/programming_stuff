@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>P2P Chat</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 400px;
+        margin: auto;
+      }
+
+      #messages {
+        flex: 1;
+        padding: 10px;
+        overflow: auto;
+      }
+
+      #input {
+        display: flex;
+        padding: 10px;
+      }
+
+      #message {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      #send-button {
+        padding: 10px;
+        margin-left: 10px;
+        background-color: #0095ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>P2P Chat</h1>
+
+    <div id="container">
+      <div id="messages"></div>
+      <div id="input">
+        <input id="message" type="text" placeholder="Enter your message">
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <script src="client.js"></script>
+  </body>
+</html>
