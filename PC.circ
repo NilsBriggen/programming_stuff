@@ -2732,4 +2732,35 @@
     <wire from="(590,100)" to="(590,110)"/>
     <wire from="(590,100)" to="(600,100)"/>
   </circuit>
+  <circuit name="INC16">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="INC16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#007304" height="20" stroke="#000000" width="20" x="50" y="50"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="6" text-anchor="middle" x="60" y="53">INC16</text>
+      <circ-anchor facing="east" x="70" y="60"/>
+      <circ-port dir="in" pin="110,40" x="50" y="60"/>
+      <circ-port dir="out" pin="150,50" x="70" y="60"/>
+    </appear>
+    <comp lib="0" loc="(110,40)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(110,60)" name="Constant">
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(150,50)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="3" loc="(150,50)" name="Adder">
+      <a name="width" val="16"/>
+    </comp>
+  </circuit>
 </project>
