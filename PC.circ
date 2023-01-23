@@ -39,9 +39,7 @@
     <tool lib="8" name="Wiring Tool"/>
     <tool lib="8" name="Text Tool"/>
     <sep/>
-    <tool lib="0" name="Pin">
-      <a name="facing" val="north"/>
-    </tool>
+    <tool lib="0" name="Pin"/>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -3440,5 +3438,241 @@
     <wire from="(940,210)" to="(950,210)"/>
     <wire from="(940,230)" to="(940,250)"/>
     <wire from="(940,250)" to="(950,250)"/>
+  </circuit>
+  <circuit name="BIT">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="BIT"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(190,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(90,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(90,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="4" loc="(120,160)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(170,170)" to="(190,170)"/>
+    <wire from="(90,170)" to="(110,170)"/>
+    <wire from="(90,210)" to="(110,210)"/>
+  </circuit>
+  <circuit name="REG16">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="REG16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#ffffff" height="30" stroke="#000000" width="40" x="54" y="54"/>
+      <rect fill="#ffffff" height="30" stroke="#000000" width="40" x="52" y="52"/>
+      <rect fill="#ffffff" height="30" stroke="#000000" width="40" x="50" y="50"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="69" y="65">REG</text>
+      <circ-anchor facing="east" x="90" y="60"/>
+      <circ-port dir="in" pin="100,1040" x="50" y="70"/>
+      <circ-port dir="in" pin="70,50" x="50" y="60"/>
+      <circ-port dir="out" pin="190,50" x="90" y="60"/>
+    </appear>
+    <comp lib="0" loc="(100,1040)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(190,50)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(190,50)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp lib="0" loc="(70,50)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(70,50)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+      <a name="spacing" val="6"/>
+    </comp>
+    <comp lib="4" loc="(120,110)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,170)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,230)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,290)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,350)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,410)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,470)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,50)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,530)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,590)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,650)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,710)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,770)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,830)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,890)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(120,950)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(100,100)" to="(100,160)"/>
+    <wire from="(100,100)" to="(110,100)"/>
+    <wire from="(100,1000)" to="(100,1040)"/>
+    <wire from="(100,1000)" to="(110,1000)"/>
+    <wire from="(100,160)" to="(100,220)"/>
+    <wire from="(100,160)" to="(110,160)"/>
+    <wire from="(100,220)" to="(100,280)"/>
+    <wire from="(100,220)" to="(110,220)"/>
+    <wire from="(100,280)" to="(100,340)"/>
+    <wire from="(100,280)" to="(110,280)"/>
+    <wire from="(100,340)" to="(100,400)"/>
+    <wire from="(100,340)" to="(110,340)"/>
+    <wire from="(100,400)" to="(100,460)"/>
+    <wire from="(100,400)" to="(110,400)"/>
+    <wire from="(100,460)" to="(100,520)"/>
+    <wire from="(100,460)" to="(110,460)"/>
+    <wire from="(100,520)" to="(100,580)"/>
+    <wire from="(100,520)" to="(110,520)"/>
+    <wire from="(100,580)" to="(100,640)"/>
+    <wire from="(100,580)" to="(110,580)"/>
+    <wire from="(100,640)" to="(100,700)"/>
+    <wire from="(100,640)" to="(110,640)"/>
+    <wire from="(100,700)" to="(100,760)"/>
+    <wire from="(100,700)" to="(110,700)"/>
+    <wire from="(100,760)" to="(100,820)"/>
+    <wire from="(100,760)" to="(110,760)"/>
+    <wire from="(100,820)" to="(100,880)"/>
+    <wire from="(100,820)" to="(110,820)"/>
+    <wire from="(100,880)" to="(100,940)"/>
+    <wire from="(100,880)" to="(110,880)"/>
+    <wire from="(100,940)" to="(100,1000)"/>
+    <wire from="(100,940)" to="(110,940)"/>
+    <wire from="(90,120)" to="(110,120)"/>
+    <wire from="(90,180)" to="(110,180)"/>
+    <wire from="(90,240)" to="(110,240)"/>
+    <wire from="(90,300)" to="(110,300)"/>
+    <wire from="(90,360)" to="(110,360)"/>
+    <wire from="(90,420)" to="(110,420)"/>
+    <wire from="(90,480)" to="(110,480)"/>
+    <wire from="(90,540)" to="(110,540)"/>
+    <wire from="(90,60)" to="(110,60)"/>
+    <wire from="(90,600)" to="(110,600)"/>
+    <wire from="(90,660)" to="(110,660)"/>
+    <wire from="(90,720)" to="(110,720)"/>
+    <wire from="(90,780)" to="(110,780)"/>
+    <wire from="(90,840)" to="(110,840)"/>
+    <wire from="(90,900)" to="(110,900)"/>
+    <wire from="(90,960)" to="(110,960)"/>
+  </circuit>
+  <circuit name="RAM16">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="RAM16"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(150,150)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(270,60)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="0" loc="(70,60)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="16"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(270,60)" name="Multiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="2" loc="(80,60)" name="Demultiplexer">
+      <a name="select" val="2"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp loc="(200,110)" name="REG16"/>
+    <comp loc="(200,110)" name="REG16"/>
+    <comp loc="(200,20)" name="REG16"/>
+    <comp loc="(200,50)" name="REG16"/>
+    <comp loc="(200,50)" name="REG16"/>
+    <comp loc="(200,80)" name="REG16"/>
+    <wire from="(100,140)" to="(100,150)"/>
+    <wire from="(100,140)" to="(250,140)"/>
+    <wire from="(100,80)" to="(100,140)"/>
+    <wire from="(120,40)" to="(130,40)"/>
+    <wire from="(120,50)" to="(160,50)"/>
+    <wire from="(120,60)" to="(140,60)"/>
+    <wire from="(120,70)" to="(130,70)"/>
+    <wire from="(130,110)" to="(160,110)"/>
+    <wire from="(130,20)" to="(130,40)"/>
+    <wire from="(130,20)" to="(160,20)"/>
+    <wire from="(130,70)" to="(130,110)"/>
+    <wire from="(140,60)" to="(140,80)"/>
+    <wire from="(140,80)" to="(160,80)"/>
+    <wire from="(150,120)" to="(150,150)"/>
+    <wire from="(150,120)" to="(160,120)"/>
+    <wire from="(150,30)" to="(150,60)"/>
+    <wire from="(150,30)" to="(160,30)"/>
+    <wire from="(150,60)" to="(150,90)"/>
+    <wire from="(150,60)" to="(160,60)"/>
+    <wire from="(150,90)" to="(150,120)"/>
+    <wire from="(150,90)" to="(160,90)"/>
+    <wire from="(200,110)" to="(220,110)"/>
+    <wire from="(200,20)" to="(220,20)"/>
+    <wire from="(200,50)" to="(230,50)"/>
+    <wire from="(200,80)" to="(210,80)"/>
+    <wire from="(210,60)" to="(210,80)"/>
+    <wire from="(210,60)" to="(230,60)"/>
+    <wire from="(220,20)" to="(220,40)"/>
+    <wire from="(220,40)" to="(230,40)"/>
+    <wire from="(220,70)" to="(220,110)"/>
+    <wire from="(220,70)" to="(230,70)"/>
+    <wire from="(250,80)" to="(250,140)"/>
+    <wire from="(70,60)" to="(80,60)"/>
   </circuit>
 </project>
