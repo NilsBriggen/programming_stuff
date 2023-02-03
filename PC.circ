@@ -65,20 +65,20 @@
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="radix" val="16"/>
-      <a name="width" val="16"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(90,100)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="radix" val="16"/>
-      <a name="width" val="16"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(90,80)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="radix" val="16"/>
-      <a name="width" val="16"/>
+      <a name="width" val="4"/>
     </comp>
     <comp lib="3" loc="(130,90)" name="Subtractor">
-      <a name="width" val="16"/>
+      <a name="width" val="4"/>
     </comp>
   </circuit>
   <circuit name="CAnd">
@@ -3636,9 +3636,7 @@
       <a name="width" val="16"/>
     </comp>
     <comp loc="(200,110)" name="REG16"/>
-    <comp loc="(200,110)" name="REG16"/>
     <comp loc="(200,20)" name="REG16"/>
-    <comp loc="(200,50)" name="REG16"/>
     <comp loc="(200,50)" name="REG16"/>
     <comp loc="(200,80)" name="REG16"/>
     <wire from="(100,140)" to="(100,150)"/>
