@@ -1,19 +1,18 @@
-import random
+import random, sys
+
+LENGTH = 1048576
+#sys.set_int_max_str_digits(maxdigits=LENGTH)
 
 def gcd(a, b):
-    if a < b:
-        return gcd(b, a)
-    elif a % b == 0:
-        return b
-    else:
-        return gcd(b, a % b)
-
+    while b:
+        a, b = b, a % b
+    return a
 
 def key_gen():
-    x = random.randint(10**256, 10**257)
+    x = random.randint(10**(LENGTH-1), 10**LENGTH)
     while gcd(10**256, x) != 1:
-        x = random.randint(10**256, 10**257)
+        x = random.randint(10**(LENGTH-1), 10**LENGTH)
 
     return x
 
-print(key_gen())
+key_gen()
