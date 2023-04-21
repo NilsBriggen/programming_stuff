@@ -33,7 +33,7 @@ while True:
     rotor1=input(f"Choose Rotor 1#\nYou can choose from{available_rotors}\n")
     rotor1 = checker(rotor1)
     while rotor1 == False:
-        rotor1=input("Something went wrong! Please retry\nChoose Rotor 1#\nYou can choose from{available_rotors}\n")
+        rotor1=input(f"Something went wrong! Please retry\nChoose Rotor 1#\nYou can choose from{available_rotors}\n")
         rotor1=checker(rotor1)
     
     chosen_rotors.append(rotor1)

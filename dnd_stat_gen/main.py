@@ -2,6 +2,9 @@ from random import randint, choice
 import names, races, time, os
 from proficiencyb import Proficiency
 from languages import Languages
+from prettytable import PrettyTable
+
+pt = PrettyTable()
 
 RED = '\u001b[31m'
 ORANGE = '\u001b[91m'
@@ -150,7 +153,7 @@ def table_gen():
         race = "Half-Elf"
     if race == "Half_Orc":
         race = "Half-Orc"
-    language = ", ".join(language)
+    languages = ", ".join(language)
     if subrace == "Black Dragonborn":
         subrace = "\u001b[7m Black Dragonborn \u001b[0m"
     elif subrace == "Blue Dragonborn":
@@ -174,9 +177,13 @@ def table_gen():
     elif race == "Rainbow Dragonborn":
         subrace = f"{RED}R{RESET} {ORANGE}A{RESET} {YELLOW}I{RESET} {GREEN}N{RESET} {BLUE}B{RESET} {INDIGO}O{RESET} {VIOLET}W{RESET}   {RED}D{RESET} {ORANGE}R{RESET} {YELLOW}A{RESET} {GREEN}G{RESET} {BLUE}O{RESET} {INDIGO}N{RESET} {VIOLET}B{RESET} {RED}O{RESET} {ORANGE}R{RESET} {YELLOW}N{RESET}"
     if subrace != race:
-        print(f"\nName: {name}\nGeschlecht: {geschlecht}\nClass: {stat_class}\nSubrace: {subrace}\nProficiency: {proficiency}\nLanguage: {language}\nStrength: {strength} | Strength modifier: {str_mod}\nDexterity: {dexterity} | Dexterity modifier: {dex_mod}\nConstitution: {constitution} | Constitution modifier: {con_mod}\nIntelligence: {intelligence} | Intelligence modifier: {int_mod}\nWisdom: {wisdom} | Wisdom modifier: {wis_mod}\nCharisma: {charisma} | Charisma modifier: {cha_mod}")
+        pt.add_column("Property", ["Name", "Geschlecht", "Class", "Subrace", "Proficiency", "Language", "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"])
+        pt.add_column("Stat", [name, geschlecht, stat_class, subrace, proficiency, languages, f"{strength}{' '*(4-len(str(strength)))}({str_mod})", f"{dexterity}{' '*(4-len(str(dexterity)))}({dex_mod})", f"{constitution}{' '*(4-len(str(constitution)))}({con_mod})", f"{intelligence}{' '*(4-len(str(intelligence)))}({int_mod})", f"{wisdom}{' '*(4-len(str(wisdom)))}({wis_mod})", f"{charisma}{' '*(4-len(str(charisma)))}({cha_mod})"])
+        print(pt)
     else:
-        print(f"\nName: {name}\nGeschlecht: {geschlecht}\nClass: {stat_class}\nSubrace: {race}\nProficiency: {proficiency}\nLanguage: {language}\nStrength: {strength} | Strength modifier: {str_mod}\nDexterity: {dexterity} | Dexterity modifier: {dex_mod}\nConstitution: {constitution} | Constitution modifier: {con_mod}\nIntelligence: {intelligence} | Intelligence modifier: {int_mod}\nWisdom: {wisdom} | Wisdom modifier: {wis_mod}\nCharisma: {charisma} | Charisma modifier: {cha_mod}")
+        pt.add_column("Property", ["Name", "Geschlecht", "Class", "Subrace", "Proficiency", "Language", "Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"])
+        pt.add_column("Stat", [name, geschlecht, stat_class, subrace, proficiency, languages, f"{strength}{' '*(4-len(str(strength)))}({str_mod})", f"{dexterity}{' '*(4-len(str(dexterity)))}({dex_mod})", f"{constitution}{' '*(4-len(str(constitution)))}({con_mod})", f"{intelligence}{' '*(4-len(str(intelligence)))}({int_mod})", f"{wisdom}{' '*(4-len(str(wisdom)))}({wis_mod})", f"{charisma}{' '*(4-len(str(charisma)))}({cha_mod})"])
+        print(pt)
 
 
 def language_calc_gen():
@@ -540,6 +547,6 @@ while run:
     if rerun == "1":
         run = False
     elif rerun != "":
-        print("\nWell...\nYou've made a typo...\nAnd you had to type one number or even nothing...\nWell the generator will now run again...")
-        time.sleep(6)
+        print("\nWell...\nYou've made a typo...\nAnd you had to type one number or even nothing...\nThe generator will now run again...")
+        time.sleep(5)
         cls()

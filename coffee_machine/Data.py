@@ -45,10 +45,7 @@ coffee = resources["coffee"]
 money = 0
 
 def less_resources_espresso():
-    global water
-    global milk
-    global coffee
-    global money
+    global water, milk, coffee, money
     water -= MENU["espresso"]["ingredients"]["water"]
     coffee -= MENU["espresso"]["ingredients"]["coffee"]
     money += MENU["espresso"]["cost"]
@@ -61,10 +58,7 @@ def less_resources_espresso():
     return water, milk, coffee, money
 
 def less_resources_latte():
-    global water
-    global milk
-    global coffee
-    global money
+    global water, milk, coffee, money
     water -= MENU["latte"]["ingredients"]["water"]
     milk -= MENU["latte"]["ingredients"]["milk"]
     coffee -= MENU["latte"]["ingredients"]["coffee"]
@@ -79,10 +73,7 @@ def less_resources_latte():
     return water, milk, coffee
 
 def less_resources_cappuccino():
-    global water
-    global milk
-    global coffee
-    global money
+    global water, milk, coffee, money
     water -= MENU["cappuccino"]["ingredients"]["water"]
     milk -= MENU["cappuccino"]["ingredients"]["milk"]
     coffee -= MENU["cappuccino"]["ingredients"]["coffee"]
@@ -107,7 +98,7 @@ def empty_money():
     money = 0
 
 def password():
-    return "Coffee_mkr2000"
+    return "admin"
 
 def refill():
     global water
