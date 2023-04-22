@@ -13,8 +13,7 @@ SetPriorityClass(handle, REALTIME_PRIORITY_CLASS)
 def cls():
     system('cls')
 
-def progress_bar():
-    minutes =1
+def progress_bar(minutes):
     for j in range(1, minutes+1):
         for i in range(1, 61):
             sleep(0.93)
