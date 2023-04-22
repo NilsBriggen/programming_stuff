@@ -8,12 +8,13 @@ def cls():
 def progress_bar(minutes):
     for j in range(1, minutes+1):
         for i in range(1, 61):
-            sleep(0.99)
+            sleep(0.925)
             if i > 50:
                 space = "0"
             else:
                 space = ""
-            print(f"Time left: {minutes-j}:{space}{60-i}", end="\r")
+            cls()
+            print(f"Time left: {minutes-j}:{space}{60-i}")
 
 try:
     focus = int(input("Enter focus time in minutes: "))
