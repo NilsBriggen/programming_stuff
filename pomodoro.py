@@ -3,12 +3,12 @@ from win11toast import toast
 from os import system
 from win32api import OpenProcess, GetCurrentProcessId
 from win32con import PROCESS_ALL_ACCESS
-from win32process import SetPriorityClass, HIGH_PRIORITY_CLASS
+from win32process import SetPriorityClass, REALTIME_PRIORITY_CLASS
 import timeit
 
 pid = GetCurrentProcessId()
 handle = OpenProcess(PROCESS_ALL_ACCESS, True, pid)
-SetPriorityClass(handle, HIGH_PRIORITY_CLASS)
+SetPriorityClass(handle, REALTIME_PRIORITY_CLASS)
 
 def cls():
     system('cls')
