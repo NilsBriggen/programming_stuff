@@ -1,14 +1,23 @@
 from time import sleep
 from win11toast import toast
 from os import system
+from win32api import OpenProcess, GetCurrentProcessId
+from win32con import PROCESS_ALL_ACCESS
+from win32process import SetPriorityClass, HIGH_PRIORITY_CLASS
+import timeit
+
+pid = GetCurrentProcessId()
+handle = OpenProcess(PROCESS_ALL_ACCESS, True, pid)
+SetPriorityClass(handle, HIGH_PRIORITY_CLASS)
 
 def cls():
     system('cls')
 
-def progress_bar(minutes):
+def progress_bar():
+    minutes =1
     for j in range(1, minutes+1):
         for i in range(1, 61):
-            sleep(0.925)
+            sleep(0.93)
             if i > 50:
                 space = "0"
             else:
