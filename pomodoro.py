@@ -1,16 +1,14 @@
-import time
+from time import sleep
 from win11toast import toast
-import os
-import timeit
+from os import system
 
 def cls():
-    os.system('cls')
+    system('cls')
 
-def progress_bar():
-    minutes = 1
+def progress_bar(minutes):
     for j in range(1, minutes+1):
         for i in range(1, 61):
-            time.sleep(0.985)
+            sleep(0.99)
             if i > 50:
                 space = "0"
             else:
@@ -29,7 +27,7 @@ except:
     break_variant = 2
     break_long = 15
     break_short = 5
-    time.sleep(3)
+    sleep(3)
     cls()
 
 reps = 0
@@ -59,5 +57,5 @@ def main():
         main()
 
 if __name__ == "__main__":
-    print(timeit.timeit(stmt = progress_bar, number=1))
+    main()
     
